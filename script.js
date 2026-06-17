@@ -48,4 +48,68 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
+
+  // Booking Form Handling
+  var bookingForm = document.getElementById('bookingForm');
+  var formSuccess = document.getElementById('formSuccess');
+  
+  if (bookingForm) {
+    // Set minimum date to today
+    var dateInput = document.getElementById('preferredDate');
+    if (dateInput) {
+      var today = new Date().toISOString().split('T')[0];
+      dateInput.setAttribute('min', today);
+    }
+    
+    bookingForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      
+      // Show loading state
+      var submitBtn = bookingForm.querySelector('button[type="submit"]');
+      var originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+      
+      // Get form data
+      var formData = new FormData(bookingForm);
+      
+      // Submit to Netlify
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString()
+      })
+      .then(function () {
+        // Show success message
+        bookingForm.style.display = 'none';
+        formSuccess.style.display = 'block';
+        formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      })
+      .catch(function (error) {
+        alert('There was an error submitting your form. Please try again or contact us directly.');
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      });
+    });
+  }
 });
+
+// Reset form function (global scope for onclick)
+function resetForm() {
+  var bookingForm = document.getElementById('bookingForm');
+  var formSuccess = document.getElementById('formSuccess');
+  
+  if (bookingForm && formSuccess) {
+    bookingForm.reset();
+    formSuccess.style.display = 'none';
+    bookingForm.style.display = 'flex';
+    bookingForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    
+    // Reset button state
+    var submitBtn = bookingForm.querySelector('button[type="submit"]');
+    if (submitBtn) {
+      submitBtn.textContent = 'Request My Free Consultation →';
+      submitBtn.disabled = false;
+    }
+  }
+}
