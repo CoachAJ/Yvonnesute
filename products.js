@@ -129,7 +129,7 @@ const PRODUCTS = [
     category: 'cognitive',
     price: 68.95,
     description: 'Advanced adaptogenic formula for mental clarity, focus, and cognitive support.',
-    image: 'images/products/renu-iq.jpg'
+    image: 'images/products/usad500007_renu-iq_0225_1200x900.jpg'
   },
   {
     id: 'USYG100074',
