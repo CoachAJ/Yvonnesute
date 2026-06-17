@@ -9,165 +9,157 @@ const SPONSOR_ID = '102742703';
 const PRODUCTS = [
   {
     id: 'USYG30',
-    name: 'Healthy Body Start Pak 2.0',
-    category: 'starter',
-    price: 185.00,
-    description: 'The foundation of the 90 For Life program. Includes Beyond Tangy Tangerine 2.0, EFA Plus, and Beyond Osteo-fx.',
-    image: 'images/products/healthy-body-pak.jpg',
-    badge: 'Best Seller'
+    name: '3.0 Rise and Restore',
+    category: 'energy',
+    price: 99.95,
+    description: 'Support your body\'s natural energy production and recovery with this powerful dual-formula system.',
+    image: 'images/products/rise-restore.jpg',
+    badge: 'Popular'
   },
   {
     id: 'USYG300005',
-    name: 'Beyond Tangy Tangerine 2.5',
-    category: 'btt',
-    price: 75.00,
-    description: 'The most advanced multi-vitamin mineral complex. Contains 115 vegetables and fruits for maximum nutrition.',
-    image: 'images/products/btt-2.5.jpg',
-    options: [
-      { id: 'USYG300005', name: 'BTT 2.5 - 32oz Canister', price: 75.00 },
-      { id: 'USYG300005T', name: 'BTT 2.5 - Tablets', price: 65.00 },
-      { id: 'USYG300005P', name: 'BTT 2.5 - Powder', price: 75.00 }
-    ]
-  },
-  {
-    id: 'USYG100077',
-    name: '3.0 Rise and Restore',
-    category: 'energy',
-    price: 55.00,
-    description: 'Support your body\'s natural energy production and recovery with this powerful dual-formula system.',
-    image: 'images/products/rise-restore.jpg'
-  },
-  {
-    id: '13205',
-    name: 'Beyond Osteo-fx Liquid',
-    category: 'bone-health',
-    price: 62.00,
-    description: 'Liquid bone and joint support formula with glucosamine, calcium, and magnesium.',
-    image: 'images/products/osteo-fx-liquid.jpg',
-    options: [
-      { id: '13205', name: 'Osteo-fx Liquid 32oz', price: 62.00 },
-      { id: '13205P', name: 'Osteo-fx Powder', price: 62.00 }
-    ]
-  },
-  {
-    id: '13203',
-    name: 'Ultimate EFA',
-    category: 'essential-fats',
-    price: 32.00,
-    description: 'Essential fatty acids from borage, flax, and fish oils. 180 soft gels.',
-    image: 'images/products/ultimate-efa.jpg',
-    options: [
-      { id: '13203', name: 'Ultimate EFA - Bottle', price: 32.00 },
-      { id: '13203C', name: 'Ultimate EFA - Canister', price: 48.00 }
-    ]
-  },
-  {
-    id: 'USYG103230',
     name: 'Collagen Peptides',
     category: 'beauty',
-    price: 45.00,
+    price: 30.95,
     description: 'Hydrolyzed collagen peptides to support skin, hair, nails, and joint health.',
     image: 'images/products/collagen.jpg'
   },
   {
-    id: '13204',
-    name: 'Plant Derived Minerals / Herbal Rainforest',
+    id: '13205',
+    name: 'Herbal Rainforest',
     category: 'minerals',
-    price: 28.00,
+    price: 34.95,
     description: 'Liquid mineral supplement with over 77 trace minerals from prehistoric plant sources. 32 fl oz.',
     image: 'images/products/herbal-rainforest.jpg'
   },
   {
-    id: '21211',
+    id: '13203',
+    name: 'Plant Derived Minerals',
+    category: 'minerals',
+    price: 23.95,
+    description: 'Liquid plant-derived minerals for optimal absorption. 32 fl oz.',
+    image: 'images/products/plant-minerals.jpg'
+  },
+  {
+    id: '13203C',
+    name: 'Plant Derived Minerals (4 Pack)',
+    category: 'minerals',
+    price: 92.95,
+    description: 'Four 32 fl oz bottles of plant-derived minerals at a discounted bundle price.',
+    image: 'images/products/plant-minerals-4pack.jpg',
+    badge: 'Bundle'
+  },
+  {
+    id: '13204',
+    name: 'Cheri-Mins',
+    category: 'minerals',
+    price: 26.95,
+    description: 'Cherry-flavored liquid mineral supplement with plant-derived minerals. 32 fl oz.',
+    image: 'images/products/cheri-mins.jpg'
+  },
+  {
+    id: 'USYG103230',
+    name: 'Strawberry Kiwi-Mins',
+    category: 'minerals',
+    price: 28.95,
+    description: 'Strawberry kiwi flavored liquid mineral supplement. 32 fl oz.',
+    image: 'images/products/strawberry-kiwi-mins.jpg'
+  },
+  {
+    id: '13223',
     name: 'Rebound FX Citrus Punch Powder',
     category: 'energy',
-    price: 52.00,
+    price: 41.95,
     description: 'Sports energy drink with vitamins, minerals, and electrolytes. 360g canister.',
-    image: 'images/products/rebound.jpg',
-    options: [
-      { id: '21211', name: 'Rebound Canister (360g)', price: 52.00 },
-      { id: '21212', name: 'Rebound Packets (30ct box)', price: 35.00 }
-    ]
+    image: 'images/products/rebound-canister.jpg'
+  },
+  {
+    id: '13231',
+    name: 'Rebound FX Citrus Punch Packets',
+    category: 'energy',
+    price: 55.95,
+    description: 'Convenient 30-count box of Rebound FX sports energy drink packets.',
+    image: 'images/products/rebound-packets.jpg'
   },
   {
     id: 'USLL005030',
-    name: 'i26 Hyperimmune Egg',
+    name: 'i26 Hyperimmune Egg Powder',
     category: 'immune',
-    price: 58.00,
+    price: 51.95,
     description: 'Hyperimmune egg powder for immune system support. 31 Day Supply Canister.',
     image: 'images/products/i26.jpg'
   },
   {
-    id: '21252',
+    id: '21211',
     name: 'Ultimate Enzymes',
     category: 'digestion',
-    price: 28.00,
-    description: 'Full spectrum digestive enzyme blend. 120 capsules.',
-    image: 'images/products/digestive-enzymes.jpg'
+    price: 30.95,
+    description: 'Full spectrum digestive enzyme blend to support nutrient absorption. 120 capsules.',
+    image: 'images/products/ultimate-enzymes.jpg'
   },
   {
-    id: 'USYG100074',
+    id: '21832',
+    name: 'Ultimate EFA',
+    category: 'essential-fats',
+    price: 48.95,
+    description: 'Essential fatty acids from borage, flax, and fish oils. 180 soft gels.',
+    image: 'images/products/ultimate-efa.jpg'
+  },
+  {
+    id: 'USAD500007',
     name: 'Renu IQ',
     category: 'cognitive',
-    price: 55.00,
-    description: 'Advanced nootropic formula for mental clarity, focus, and cognitive support.',
+    price: 68.95,
+    description: 'Advanced adaptogenic formula for mental clarity, focus, and cognitive support.',
     image: 'images/products/renu-iq.jpg'
   },
   {
-    id: '13223',
+    id: 'USYG100074',
+    name: 'Beyond Tangy Tangerine 2.5',
+    category: 'btt',
+    price: 69.95,
+    description: 'The most advanced multi-vitamin mineral complex. Contains 115 vegetables and fruits.',
+    image: 'images/products/btt-2.5.jpg'
+  },
+  {
+    id: 'USYG100077',
+    name: 'BTT 2.0 Tablets',
+    category: 'btt',
+    price: 54.95,
+    description: 'Beyond Tangy Tangerine in convenient tablet form. 120 Tablets.',
+    image: 'images/products/btt-tablets.jpg'
+  },
+  {
+    id: '20691',
     name: 'Ultimate Mineral Caps',
     category: 'minerals',
-    price: 42.00,
+    price: 46.95,
     description: 'Complete mineral supplement in convenient capsule form. 64 capsules.',
     image: 'images/products/mineral-caps.jpg'
   },
   {
-    id: '13231',
-    name: 'YGY Mixer/Shaker',
-    category: 'accessories',
-    price: 12.00,
-    description: 'Convenient shaker bottle for mixing your favorite Youngevity products.',
-    image: 'images/products/ygy-mixer.jpg'
-  },
-  {
-    id: '21832',
+    id: 'USFL000123',
     name: 'MSM Ultra',
     category: 'joints',
-    price: 24.00,
+    price: 43.95,
     description: 'Methylsulfonylmethane for joint health, flexibility, and connective tissue support.',
     image: 'images/products/msm.jpg'
   },
   {
-    id: 'USAD500007',
+    id: '21252',
     name: 'Ultimate Gluco-Gel',
     category: 'blood-sugar',
-    price: 38.00,
+    price: 43.95,
     description: 'Blood sugar support formula with chromium, vanadium, and gymnema sylvestre. 240 capsules.',
     image: 'images/products/gluco-gel.jpg'
   },
   {
-    id: '20691',
+    id: '20971',
     name: 'Ultimate Selenium',
     category: 'minerals',
-    price: 18.00,
+    price: 30.95,
     description: 'Essential trace mineral for thyroid health, immune function, and antioxidant protection. 90 capsules.',
     image: 'images/products/selenium.jpg'
-  },
-  {
-    id: 'USFL000123',
-    name: 'Liquid Flavored Minerals',
-    category: 'minerals',
-    price: 28.00,
-    description: 'Great tasting liquid mineral supplement in fruit flavors. 32 fl oz.',
-    image: 'images/products/flavored-minerals.jpg'
-  },
-  {
-    id: '20971',
-    name: 'Cheri-Mins / Strawberry Kiwi-Mins',
-    category: 'minerals',
-    price: 28.00,
-    description: 'Flavored liquid mineral supplements with plant-derived minerals. 32 fl oz.',
-    image: 'images/products/cheri-mins.jpg'
   }
 ];
 
