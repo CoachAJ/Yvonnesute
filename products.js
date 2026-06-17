@@ -58,12 +58,30 @@ const PRODUCTS = [
     image: 'images/products/cheri-mins.jpg'
   },
   {
+    id: '13204C',
+    name: 'Cheri-Mins (4 Pack)',
+    category: 'minerals',
+    price: 103.95,
+    description: 'Four 32 fl oz bottles of cherry-flavored liquid minerals. Great value bundle.',
+    image: 'images/products/cheri-mins-4pack.jpg',
+    badge: 'Bundle'
+  },
+  {
     id: 'USYG103230',
     name: 'Strawberry Kiwi-Mins',
     category: 'minerals',
     price: 28.95,
     description: 'Strawberry kiwi flavored liquid mineral supplement. 32 fl oz.',
     image: 'images/products/strawberry-kiwi-mins.jpg'
+  },
+  {
+    id: 'USYG0024',
+    name: 'Strawberry Kiwi-Mins (4 Pack)',
+    category: 'minerals',
+    price: 100.95,
+    description: 'Four 32 fl oz bottles of strawberry kiwi flavored liquid minerals. Great value bundle.',
+    image: 'images/products/strawberry-kiwi-mins-4pack.jpg',
+    badge: 'Bundle'
   },
   {
     id: '13223',
