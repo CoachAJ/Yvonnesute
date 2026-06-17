@@ -217,6 +217,24 @@ img { display: block; max-width: 100%; }
 .footer .brand { color: #fff; margin-bottom: 14px; }
 .footer .brand small { color: var(--gold); }
 .footer .desc { font-size: .94rem; color: #b6a99b; max-width: 320px; }
+
+.cert-logos {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.cert-logo {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.12); margin-top: 44px; padding-top: 22px; font-size: .82rem; color: #9c9082; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; }
 .footer-bottom .disc { max-width: 760px; }
 
