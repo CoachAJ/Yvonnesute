@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Your Free Consultation | Contact 4ABETTERU2 Wellness</title>
+  <meta name="description" content="Book your free 15-minute consultation with Yvonne Rea. No obligation - discuss your health concerns and learn how microcurrent therapy and nutrition can help." />
+  <link rel="canonical" href="https://www.4abetteru2.com/contact.html" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon_io/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png" />
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Nunito+Sans:wght@400;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+
+  <!-- ============== HEADER ============== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="4ABETTERU2 Wellness Logo" class="brand-logo" />
+        <span>4ABETTERU2<small>Wellness · Pain Relief</small></span>
+      </a>
+      <nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li class="nav-cta"><a href="contact.html" class="btn btn-primary">Book Now</a></li>
+          <li class="cart-icon-wrap">
+            <button id="cartToggle" class="cart-icon" aria-label="Shopping Cart">
+              🛒
+              <span class="cart-count" id="cartCount" style="display:none">0</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============== CONTACT/BOOKING PAGE CONTENT ============== -->
+  <section class="section booking" style="padding-top:120px">
+    <div class="container">
+      <div class="booking-grid">
+        <div class="booking-info">
+          <span class="eyebrow">Start Your Journey</span>
+          <h2>Book Your Free 15-Minute Consultation</h2>
+          <p class="section-lead">No obligation — just an honest conversation about what your body may be missing and how to start restoring it.</p>
+          
+          <div class="booking-benefits">
+            <div class="benefit-item">
+              <span class="benefit-icon">✓</span>
+              <span>Discuss your specific pain or health concerns</span>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">✓</span>
+              <span>Learn if microcurrent therapy is right for you</span>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">✓</span>
+              <span>Get personalized nutrition guidance</span>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">✓</span>
+              <span>Remote or in-person options available</span>
+            </div>
+          </div>
+          
+          <div class="booking-contact">
+            <p><strong>Prefer to reach out directly?</strong></p>
+            <a href="mailto:yvonne@4abetteru2.com" class="contact-link">📧 yvonne@4abetteru2.com</a>
+            <a href="tel:+PHONE" class="contact-link">📞 Call to Schedule</a>
+          </div>
+        </div>
+        
+        <div class="booking-form-wrap">
+          <!-- Netlify Form -->
+          <form name="booking-consultation" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="booking-form" id="bookingForm">
+            <div style="display:none;">
+              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </div>
+            <input type="hidden" name="form-name" value="booking-consultation" />
+            
+            <div class="form-header">
+              <h3>Request Your Consultation</h3>
+              <p>Fill out the form below and Yvonne will get back to you within 24 hours.</p>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required placeholder="Your first name" />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required placeholder="Your last name" />
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com" />
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567" />
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="preferredDate">Preferred Date</label>
+                <input type="date" id="preferredDate" name="preferredDate" />
+              </div>
+              <div class="form-group">
+                <label for="preferredTime">Preferred Time</label>
+                <select id="preferredTime" name="preferredTime">
+                  <option value="">Select a time...</option>
+                  <option value="morning">Morning (9am - 12pm)</option>
+                  <option value="afternoon">Afternoon (12pm - 5pm)</option>
+                  <option value="evening">Evening (5pm - 7pm)</option>
+                  <option value="flexible">I'm Flexible</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="serviceInterest">I'm Interested In *</label>
+              <select id="serviceInterest" name="serviceInterest" required>
+                <option value="">Select a service...</option>
+                <option value="microcurrent">Microcurrent & Frequency Therapy</option>
+                <option value="functional-medicine">Functional Medicine Consultation</option>
+                <option value="nutrition">90 For Life Nutrition Protocol</option>
+                <option value="combination">Combination of Services</option>
+                <option value="not-sure">Not Sure - Need Guidance</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label>Primary Concerns (Check all that apply)</label>
+              <div class="checkbox-group">
+                <label class="checkbox-label"><input type="checkbox" name="concerns" value="chronic-pain" /><span>Chronic Pain</span></label>
+                <label class="checkbox-label"><input type="checkbox" name="concerns" value="inflammation" /><span>Inflammation / Arthritis</span></label>
+                <label class="checkbox-label"><input type="checkbox" name="concerns" value="fatigue" /><span>Fatigue / Low Energy</span></label>
+                <label class="checkbox-label"><input type="checkbox" name="concerns" value="digestive" /><span>Digestive Issues</span></label>
+                <label class="checkbox-label"><input type="checkbox" name="concerns" value="sleep" /><span>Sleep Problems</span></label>
+                <label class="checkbox-label"><input type="checkbox" name="concerns" value="autoimmune" /><span>Autoimmune Condition</span></label>
+                <label class="checkbox-label"><input type="checkbox" name="concerns" value="weight" /><span>Weight Management</span></label>
+                <label class="checkbox-label"><input type="checkbox" name="concerns" value="general-wellness" /><span>General Wellness</span></label>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Tell Us About Your Health Goals</label>
+              <textarea id="message" name="message" rows="4" placeholder="Share a brief description of what you're experiencing..."></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label class="checkbox-label consent-label">
+                <input type="checkbox" name="consent" required />
+                <span>I agree to be contacted regarding my consultation request. I understand this is not medical advice. *</span>
+              </label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-full">Request My Free Consultation →</button>
+            <p class="form-note">📅 Yvonne will personally review your request and confirm within 24 hours.</p>
+          </form>
+          
+          <div id="formSuccess" class="form-success" style="display:none;">
+            <div class="success-icon">✓</div>
+            <h3>Thank You!</h3>
+            <p>Your consultation request has been received. Yvonne will review and get back to you within 24 hours.</p>
+            <button onclick="resetForm()" class="btn btn-light">Submit Another Request</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand"><img src="images/logo.png" alt="4ABETTERU2 Wellness Logo" class="brand-logo" /><span>4ABETTERU2<small>Wellness · Pain Relief</small></span></a>
+          <p class="desc">No needle, no drug pain relief. Microcurrent with biofeedback and root-cause nutrition.</p>
+          <div class="cert-logos">
+            <img src="images/FMA%20Functional%20Med%20Academy%20Logo.avif" alt="Functional Medicine Academy" class="cert-logo" />
+            <img src="images/IWH%20Coaching%20logo.avif" alt="IWH Coaching" class="cert-logo" />
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="contact.html">Book Consultation</a></li>
+            <li><a href="mailto:yvonne@4abetteru2.com">yvonne@4abetteru2.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="disc">* These statements have not been evaluated by the FDA.</p>
+        <p>© <span id="year">2026</span> 4ABETTERU2 Wellness. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-content">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button id="closeCart" class="close-cart">&times;</button>
+      </div>
+      <div id="cartItems" class="cart-items"><div class="empty-cart">Your cart is empty</div></div>
+      <div class="cart-footer">
+        <div class="cart-total">Total: $<span id="cartTotal">0.00</span></div>
+        <button id="checkoutBtn" class="btn btn-primary btn-full">Checkout →</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="products.js"></script>
+  <script src="cart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
