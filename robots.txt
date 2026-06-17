@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.4abetteru2.com/sitemap.xml
+
+# Disallow admin and private areas (if any)
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
