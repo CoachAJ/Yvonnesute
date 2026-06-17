@@ -31,7 +31,7 @@ const PRODUCTS = [
   },
   {
     id: 'USYG100077',
-    name: 'Rise & Restore',
+    name: '3.0 Rise and Restore',
     category: 'energy',
     price: 55.00,
     description: 'Support your body\'s natural energy production and recovery with this powerful dual-formula system.',
@@ -51,14 +51,14 @@ const PRODUCTS = [
   },
   {
     id: '13203',
-    name: 'Ultimate EFA Plus',
+    name: 'Ultimate EFA',
     category: 'essential-fats',
     price: 32.00,
-    description: 'Essential fatty acids from borage, flax, and fish oils. Supports heart, brain, and joint health.',
+    description: 'Essential fatty acids from borage, flax, and fish oils. 180 soft gels.',
     image: 'images/products/ultimate-efa.jpg',
     options: [
-      { id: '13203', name: 'EFA Plus (Bottle)', price: 32.00 },
-      { id: '13203C', name: 'EFA Plus (Canister)', price: 48.00 }
+      { id: '13203', name: 'Ultimate EFA - Bottle', price: 32.00 },
+      { id: '13203C', name: 'Ultimate EFA - Canister', price: 48.00 }
     ]
   },
   {
@@ -71,38 +71,38 @@ const PRODUCTS = [
   },
   {
     id: '13204',
-    name: 'Herbal Rainforest',
+    name: 'Plant Derived Minerals / Herbal Rainforest',
     category: 'minerals',
     price: 28.00,
-    description: 'Liquid mineral supplement with over 77 trace minerals from plant sources.',
+    description: 'Liquid mineral supplement with over 77 trace minerals from prehistoric plant sources. 32 fl oz.',
     image: 'images/products/herbal-rainforest.jpg'
   },
   {
     id: '21211',
-    name: 'Rebound FX',
+    name: 'Rebound FX Citrus Punch Powder',
     category: 'energy',
     price: 52.00,
-    description: 'Sports energy drink with vitamins, minerals, and electrolytes. Great for workouts.',
+    description: 'Sports energy drink with vitamins, minerals, and electrolytes. 360g canister.',
     image: 'images/products/rebound.jpg',
     options: [
-      { id: '21211', name: 'Rebound Canister', price: 52.00 },
-      { id: '21212', name: 'Rebound Packets (30ct)', price: 35.00 }
+      { id: '21211', name: 'Rebound Canister (360g)', price: 52.00 },
+      { id: '21212', name: 'Rebound Packets (30ct box)', price: 35.00 }
     ]
   },
   {
     id: 'USLL005030',
-    name: 'I26',
+    name: 'i26 Hyperimmune Egg',
     category: 'immune',
     price: 58.00,
-    description: 'Immune system support with egg protein and specialized immune factors.',
+    description: 'Hyperimmune egg powder for immune system support. 31 Day Supply Canister.',
     image: 'images/products/i26.jpg'
   },
   {
     id: '21252',
-    name: 'Ultimate Digestive Enzymes',
+    name: 'Ultimate Enzymes',
     category: 'digestion',
     price: 28.00,
-    description: 'Full spectrum digestive enzyme blend to support nutrient absorption.',
+    description: 'Full spectrum digestive enzyme blend. 120 capsules.',
     image: 'images/products/digestive-enzymes.jpg'
   },
   {
@@ -118,12 +118,12 @@ const PRODUCTS = [
     name: 'Ultimate Mineral Caps',
     category: 'minerals',
     price: 42.00,
-    description: 'Complete mineral supplement in convenient capsule form. 60 essential minerals.',
+    description: 'Complete mineral supplement in convenient capsule form. 64 capsules.',
     image: 'images/products/mineral-caps.jpg'
   },
   {
     id: '13231',
-    name: 'YGY Mixer',
+    name: 'YGY Mixer/Shaker',
     category: 'accessories',
     price: 12.00,
     description: 'Convenient shaker bottle for mixing your favorite Youngevity products.',
@@ -131,7 +131,7 @@ const PRODUCTS = [
   },
   {
     id: '21832',
-    name: 'MSM',
+    name: 'MSM Ultra',
     category: 'joints',
     price: 24.00,
     description: 'Methylsulfonylmethane for joint health, flexibility, and connective tissue support.',
@@ -139,19 +139,35 @@ const PRODUCTS = [
   },
   {
     id: 'USAD500007',
-    name: 'Glu-Co Gel Capsules',
+    name: 'Ultimate Gluco-Gel',
     category: 'blood-sugar',
     price: 38.00,
-    description: 'Blood sugar support formula with chromium, vanadium, and gymnema sylvestre.',
+    description: 'Blood sugar support formula with chromium, vanadium, and gymnema sylvestre. 240 capsules.',
     image: 'images/products/gluco-gel.jpg'
   },
   {
     id: '20691',
-    name: 'Selenium',
+    name: 'Ultimate Selenium',
     category: 'minerals',
     price: 18.00,
-    description: 'Essential trace mineral for thyroid health, immune function, and antioxidant protection.',
+    description: 'Essential trace mineral for thyroid health, immune function, and antioxidant protection. 90 capsules.',
     image: 'images/products/selenium.jpg'
+  },
+  {
+    id: 'USFL000123',
+    name: 'Liquid Flavored Minerals',
+    category: 'minerals',
+    price: 28.00,
+    description: 'Great tasting liquid mineral supplement in fruit flavors. 32 fl oz.',
+    image: 'images/products/flavored-minerals.jpg'
+  },
+  {
+    id: '20971',
+    name: 'Cheri-Mins / Strawberry Kiwi-Mins',
+    category: 'minerals',
+    price: 28.00,
+    description: 'Flavored liquid mineral supplements with plant-derived minerals. 32 fl oz.',
+    image: 'images/products/cheri-mins.jpg'
   }
 ];
 
