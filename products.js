@@ -33,6 +33,14 @@ const PRODUCTS = [
     image: 'images/products/herbalrainforest_liquid-sleeve_0120_image_1200x900.jpg'
   },
   {
+    id: 'USYG103211',
+    name: 'Beyond Osteo-Fx Powder',
+    category: 'bone-health',
+    price: 48.95,
+    description: 'Bone and joint support formula in powder form. 357g canister.',
+    image: 'images/products/usyg103211_beyond-osteo-fx-powder_1200x900.jpg'
+  },
+  {
     id: '13203',
     name: 'Plant Derived Minerals',
     category: 'minerals',
