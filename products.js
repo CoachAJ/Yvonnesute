@@ -208,21 +208,21 @@ const NINETY_FOR_LIFE_PAKS = [
     id: '10245',
     name: 'Healthy Body Start Pak™ - Original',
     price: 142.95,
-    description: 'The complete 90 For Life foundation with BTT, EFA Plus, and Beyond Osteo-fx.',
+    description: 'The complete 90 For Life foundation with Beyond Tangy Tangerine, EFA Plus, and Beyond Osteo-fx.',
     image: 'images/products/healthy-body-pak-original.png'
   },
   {
     id: '10282',
-    name: 'Healthy Body Start Pak™ 2.0',
+    name: 'Healthy Body Start Pak™ 2.0 Liquid',
     price: 146.95,
-    description: 'Enhanced formula with Beyond Osteo-Fx Liquid for superior absorption.',
+    description: 'Enhanced formula with Beyond Osteo-FX Liquid for superior absorption.',
     image: 'images/products/healthy-body-pak-2.0.png'
   },
   {
     id: '10282Q',
-    name: 'Healthy Body Start Pak™ 2.5',
+    name: 'Healthy Body Start Pak™ 2.5 (Beyond Osteo-FX Liquid)',
     price: 146.95,
-    description: 'Latest formula featuring Beyond Tangy Tangerine 2.5 and Beyond Osteo-Fx Liquid.',
+    description: 'Latest formula featuring Beyond Tangy Tangerine 2.5 and Beyond Osteo-FX Liquid.',
     image: 'images/products/healthy-body-pak-2.5.png'
   }
 ];
