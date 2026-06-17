@@ -414,27 +414,47 @@
     }, 3000);
   }
 
-  // 90 For Life Paks Section
+  // 90 For Life Paks Section - Multiple Ways to Get the 90 Essential Nutrients
   function renderNinetyForLife() {
     const container = document.getElementById('ninetyPaksGrid');
     if (!container) return;
 
     container.innerHTML = NINETY_FOR_LIFE_PAKS.map(pak => `
-      <div class="ninety-card">
-        <span class="savings-badge">${pak.savings}</span>
-        <h3>${pak.name}</h3>
-        <p>${pak.description}</p>
-        <div class="price">$${pak.price.toFixed(2)}</div>
-        <button class="btn btn-light add-pak-btn" data-id="${pak.id}" style="width:100%">
-          Add to Cart
-        </button>
+      <div class="ninety-pak-card" data-id="${pak.id}">
+        <div class="ninety-pak-image">
+          <img src="${pak.image}" alt="${pak.name}" onerror="this.src='images/products/placeholder.jpg'">
+        </div>
+        <div class="ninety-pak-content">
+          <div class="ninety-pak-header">
+            <h4 class="ninety-pak-name">${pak.name}</h4>
+            <span class="ninety-pak-price">$${pak.price.toFixed(2)}</span>
+          </div>
+          <p class="ninety-pak-desc">${pak.description}</p>
+          <div class="ninety-pak-actions">
+            <button class="ninety-pak-btn buy add-pak-btn" data-id="${pak.id}">
+              Buy Now
+            </button>
+            <a href="https://dailywithdoc.com" target="_blank" rel="noopener noreferrer" class="ninety-pak-btn learn">
+              Learn More
+            </a>
+          </div>
+        </div>
       </div>
     `).join('');
 
-    // Add event listeners
+    // Add event listeners for Buy Now buttons
     container.querySelectorAll('.add-pak-btn').forEach(btn => {
-      btn.addEventListener('click', function() {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
         addToCart(this.dataset.id, 1);
+        
+        // Button feedback
+        this.textContent = '✓ Added!';
+        this.style.background = 'var(--sage)';
+        setTimeout(() => {
+          this.textContent = 'Buy Now';
+          this.style.background = '';
+        }, 1500);
       });
     });
   }

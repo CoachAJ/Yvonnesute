@@ -648,7 +648,147 @@
   background: linear-gradient(135deg, var(--coral), #e74c3c);
 }
 
+/* 90 For Life Section Enhancements */
+.ninety-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.ninety-info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ninety-info-card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+
+.ninety-paks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.ninety-pak-card {
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.ninety-pak-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.ninety-pak-image {
+  aspect-ratio: 4/3;
+  background: linear-gradient(135deg, var(--cream-2), var(--sand));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.ninety-pak-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.ninety-pak-content {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.ninety-pak-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.ninety-pak-name {
+  font-family: 'Fraunces', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  line-height: 1.3;
+}
+
+.ninety-pak-price {
+  font-family: 'Fraunces', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--coral-dark);
+  white-space: nowrap;
+}
+
+.ninety-pak-desc {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.ninety-pak-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.ninety-pak-btn {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.ninety-pak-btn.buy {
+  background: var(--coral);
+  color: #fff;
+}
+
+.ninety-pak-btn.buy:hover {
+  background: var(--coral-dark);
+  transform: scale(1.02);
+}
+
+.ninety-pak-btn.learn {
+  background: transparent;
+  color: var(--sage-dark);
+  border: 2px solid var(--sage-dark);
+}
+
+.ninety-pak-btn.learn:hover {
+  background: var(--sage-dark);
+  color: #fff;
+}
+
 /* Responsive */
+@media (max-width: 940px) {
+  .ninety-content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 680px) {
   .cart-modal {
     max-width: 100%;

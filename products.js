@@ -177,39 +177,35 @@ const CATEGORIES = [
   { id: 'digestion', name: 'Digestion', icon: '🌿' }
 ];
 
-// 90 For Life Pak Bundle
+// 90 For Life Pak Bundle - Multiple Ways to Get the 90 Essential Nutrients
 const NINETY_FOR_LIFE_PAKS = [
   {
-    id: 'USYG30',
-    name: 'Healthy Body Start Pak 2.0',
-    price: 185.00,
-    description: 'Complete 90 For Life foundation pak with BTT 2.0, EFA Plus, and Osteo-fx.',
-    savings: 'Save $23',
-    image: 'images/products/healthy-body-pak.jpg'
+    id: 'KT0001',
+    name: 'Basic Mighty 90',
+    price: 70.95,
+    description: 'The foundational supplement system with essential minerals, vitamins, and nutrients.',
+    image: 'images/products/basic-mighty-90.jpg'
   },
   {
-    id: 'USYG100103',
-    name: 'Anti-Aging Healthy Body Pak 2.0',
-    price: 220.00,
-    description: 'Healthy Body Start Pak plus Cell Shield for advanced antioxidant protection.',
-    savings: 'Save $28',
-    image: 'images/products/anti-aging-pak.jpg'
+    id: '10245',
+    name: 'Healthy Body Start Pak™ - Original',
+    price: 142.95,
+    description: 'The complete 90 For Life foundation with BTT, EFA Plus, and Beyond Osteo-fx.',
+    image: 'images/products/healthy-body-pak-original.jpg'
   },
   {
-    id: 'USYG100104',
-    name: 'Healthy Body Bone & Joint Pak 2.0',
-    price: 210.00,
-    description: 'Enhanced pak with extra bone and joint support for active lifestyles.',
-    savings: 'Save $26',
-    image: 'images/products/bone-joint-pak.jpg'
+    id: '10282',
+    name: 'Healthy Body Start Pak™ 2.0',
+    price: 146.95,
+    description: 'Enhanced formula with Beyond Osteo-Fx Liquid for superior absorption.',
+    image: 'images/products/healthy-body-pak-2.0.jpg'
   },
   {
-    id: 'USYG100107',
-    name: 'Healthy Body Blood Sugar Pak 2.0',
-    price: 195.00,
-    description: 'Specialized pak for blood sugar support with Glu-Co Gel included.',
-    savings: 'Save $24',
-    image: 'images/products/blood-sugar-pak.jpg'
+    id: '10282Q',
+    name: 'Healthy Body Start Pak™ 2.5',
+    price: 146.95,
+    description: 'Latest formula featuring Beyond Tangy Tangerine 2.5 and Beyond Osteo-Fx Liquid.',
+    image: 'images/products/healthy-body-pak-2.5.jpg'
   }
 ];
 
