@@ -1007,6 +1007,38 @@ img { display: block; max-width: 100%; }
   margin-top: 20px;
 }
 
+/* ---------------- CTA Section ---------------- */
+.cta { 
+  background: linear-gradient(135deg, var(--coral), var(--gold)); 
+  color: #fff; 
+  text-align: center; 
+  padding: 80px 0;
+}
+.cta h2 { 
+  font-size: clamp(2rem, 4vw, 3rem); 
+  margin-bottom: 16px;
+  color: #fff;
+}
+.cta p { 
+  color: rgba(255,255,255,.92); 
+  max-width: 560px; 
+  margin: 0 auto 28px; 
+  font-size: 1.08rem; 
+}
+.cta .btn-light {
+  background: #fff;
+  color: var(--coral-dark);
+}
+.cta .btn-ghost {
+  border-color: #fff;
+  color: #fff;
+  background: transparent;
+}
+.cta .btn-ghost:hover {
+  background: #fff;
+  color: var(--coral-dark);
+}
+
 /* ---------------- Newsletter ---------------- */
 .newsletter { background: var(--cream); }
 .nl-box { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 44px; text-align: center; max-width: 720px; margin: 0 auto; border: 1px solid var(--sand); }
@@ -1022,7 +1054,15 @@ img { display: block; max-width: 100%; }
 .footer a { color: #d8cfc4; font-size: .94rem; }
 .footer a:hover { color: var(--gold); }
 .footer ul { list-style: none; display: grid; gap: 10px; }
-.footer .brand { color: #fff; margin-bottom: 14px; }
+.footer .brand { color: #fff; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.footer .brand-logo {
+  height: 50px;
+  width: auto;
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
 .footer .brand small { color: var(--gold); }
 .footer .desc { font-size: .94rem; color: #b6a99b; max-width: 320px; }
 
