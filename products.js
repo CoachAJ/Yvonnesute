@@ -186,6 +186,43 @@ const PRODUCTS = [
     price: 30.95,
     description: 'Essential trace mineral for thyroid health, immune function, and antioxidant protection. 90 capsules.',
     image: 'images/products/ultimate-selenium_0324_1200x900_1.jpg'
+  },
+  // 90 For Life Starter Paks
+  {
+    id: 'KT0001',
+    name: 'Basic Mighty 90',
+    category: 'starter',
+    price: 70.95,
+    description: 'The foundational supplement system with essential minerals, vitamins, and nutrients.',
+    image: 'images/products/basic-mighty-90.png',
+    badge: 'Starter Pak'
+  },
+  {
+    id: '10245',
+    name: 'Healthy Body Start Pak™ - Original',
+    category: 'starter',
+    price: 142.95,
+    description: 'The complete 90 For Life foundation with Beyond Tangy Tangerine, EFA Plus, and Beyond Osteo-fx.',
+    image: 'images/products/healthy-body-pak-original.png',
+    badge: 'Starter Pak'
+  },
+  {
+    id: '10282',
+    name: 'Healthy Body Start Pak™ 2.0 Liquid',
+    category: 'starter',
+    price: 146.95,
+    description: 'Enhanced formula with Beyond Osteo-FX Liquid for superior absorption.',
+    image: 'images/products/healthy-body-pak-2.0.png',
+    badge: 'Starter Pak'
+  },
+  {
+    id: '10282Q',
+    name: 'Healthy Body Start Pak™ 2.5 (Beyond Osteo-FX Liquid)',
+    category: 'starter',
+    price: 146.95,
+    description: 'Latest formula featuring Beyond Tangy Tangerine 2.5 and Beyond Osteo-FX Liquid.',
+    image: 'images/products/healthy-body-pak-2.5.png',
+    badge: 'Starter Pak'
   }
 ];
 
