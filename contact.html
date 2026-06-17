@@ -32,6 +32,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="products.html">Products</a></li>
+          <li><a href="success-stories.html">Stories</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li class="nav-cta"><a href="contact.html" class="btn btn-primary">Book Now</a></li>
           <li class="cart-icon-wrap">
@@ -227,18 +228,30 @@
     </div>
   </footer>
 
-  <!-- Cart Modal -->
-  <div id="cartModal" class="cart-modal">
-    <div class="cart-content">
-      <div class="cart-header">
-        <h3>Your Cart</h3>
-        <button id="closeCart" class="close-cart">&times;</button>
+  <!-- ============== CART MODAL / SLIDE-OUT DRAWER ============== -->
+  <div class="cart-modal-backdrop" id="cartBackdrop"></div>
+  <div class="cart-modal" id="cartModal">
+    <div class="cart-modal-header">
+      <h3>🛒 Your Cart</h3>
+      <button class="cart-modal-close" id="closeCart">×</button>
+    </div>
+    <div class="cart-modal-body">
+      <div class="cart-empty" id="cartEmpty">
+        <div class="cart-empty-icon">🛒</div>
+        <h4>Your cart is empty</h4>
+        <p>Browse our products and add items to get started with your wellness journey.</p>
+        <a href="products.html" class="btn btn-primary" style="margin-top:20px">Browse Products</a>
       </div>
-      <div id="cartItems" class="cart-items"><div class="empty-cart">Your cart is empty</div></div>
-      <div class="cart-footer">
-        <div class="cart-total">Total: $<span id="cartTotal">0.00</span></div>
-        <button id="checkoutBtn" class="btn btn-primary btn-full">Checkout →</button>
+      <div class="cart-items" id="cartItems"></div>
+    </div>
+    <div class="cart-modal-footer">
+      <div class="cart-subtotal">
+        <span class="cart-subtotal-label">Subtotal</span>
+        <span class="cart-subtotal-amount" id="cartSubtotal">$0.00</span>
       </div>
+      <button class="cart-checkout-btn" id="checkoutBtn">Proceed to Checkout →</button>
+      <button class="cart-continue-btn" id="continueShopping2">Continue Shopping</button>
+      <p class="cart-note">Secure checkout powered by Youngevity. You'll be redirected to complete your purchase.</p>
     </div>
   </div>
 
