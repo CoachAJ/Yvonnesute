@@ -1166,3 +1166,16 @@ img { display: block; max-width: 100%; }
   .booking-contact { padding: 20px; }
   .form-success { padding: 28px 20px; }
 }
+
+/* ---------------- Legal Pages ---------------- */
+.legal-body h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.3rem;
+  color: var(--sage-dark);
+  margin: 32px 0 12px;
+}
+.legal-body p { color: var(--charcoal); margin-bottom: 16px; }
+.legal-body ul { margin: 0 0 16px 22px; color: var(--charcoal); }
+.legal-body li { margin-bottom: 8px; }
+.legal-body a { color: var(--coral-dark); font-weight: 700; text-decoration: underline; }
+.legal-body a:hover { color: var(--coral); }
