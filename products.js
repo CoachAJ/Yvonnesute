@@ -38,7 +38,7 @@ const PRODUCTS = [
     category: 'bone-health',
     price: 48.95,
     description: 'Bone and joint support formula in powder form. 357g canister.',
-    image: 'images/products/usyg103211_beyond-osteo-fx-powder_1200x900.jpg'
+    image: 'images/products/usyg103211_beyond_osteo_powder_357g_canister_1024_1200x900.jpg'
   },
   {
     id: '13203',
