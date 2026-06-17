@@ -13,7 +13,7 @@ const PRODUCTS = [
     category: 'energy',
     price: 99.95,
     description: 'Support your body\'s natural energy production and recovery with this powerful dual-formula system.',
-    image: 'images/products/rise-restore.jpg',
+    image: 'images/products/usyg30_3.0-rise-restore_1200x900.jpg',
     badge: 'Popular'
   },
   {
@@ -22,7 +22,7 @@ const PRODUCTS = [
     category: 'beauty',
     price: 30.95,
     description: 'Hydrolyzed collagen peptides to support skin, hair, nails, and joint health.',
-    image: 'images/products/collagen.jpg'
+    image: 'images/products/usyg300005_collagenpeptides_0923_cartimages_1200x900.jpg'
   },
   {
     id: '13205',
@@ -30,7 +30,7 @@ const PRODUCTS = [
     category: 'minerals',
     price: 34.95,
     description: 'Liquid mineral supplement with over 77 trace minerals from prehistoric plant sources. 32 fl oz.',
-    image: 'images/products/herbal-rainforest.jpg'
+    image: 'images/products/herbalrainforest_liquid-sleeve_0120_image_1200x900.jpg'
   },
   {
     id: '13203',
@@ -38,7 +38,7 @@ const PRODUCTS = [
     category: 'minerals',
     price: 23.95,
     description: 'Liquid plant-derived minerals for optimal absorption. 32 fl oz.',
-    image: 'images/products/plant-minerals.jpg'
+    image: 'images/products/plant-derived-mins_liquid-sleeve_0523_image_1200x900.jpg'
   },
   {
     id: '13203C',
@@ -46,7 +46,7 @@ const PRODUCTS = [
     category: 'minerals',
     price: 92.95,
     description: 'Four 32 fl oz bottles of plant-derived minerals at a discounted bundle price.',
-    image: 'images/products/plant-minerals-4pack.jpg',
+    image: 'images/products/4pack_plant-derived-mins_liquid-sleeve_0523_image_1200x900.jpg',
     badge: 'Bundle'
   },
   {
@@ -55,7 +55,7 @@ const PRODUCTS = [
     category: 'minerals',
     price: 26.95,
     description: 'Cherry-flavored liquid mineral supplement with plant-derived minerals. 32 fl oz.',
-    image: 'images/products/cheri-mins.jpg'
+    image: 'images/products/cheri-mins_liquid-sleeve_0523_image_1200x900.jpg'
   },
   {
     id: '13204C',
@@ -63,7 +63,7 @@ const PRODUCTS = [
     category: 'minerals',
     price: 103.95,
     description: 'Four 32 fl oz bottles of cherry-flavored liquid minerals. Great value bundle.',
-    image: 'images/products/cheri-mins-4pack.jpg',
+    image: 'images/products/4pack_cheri-mins_liquid-sleeve_0523_image_1200x900.jpg',
     badge: 'Bundle'
   },
   {
@@ -72,7 +72,7 @@ const PRODUCTS = [
     category: 'minerals',
     price: 28.95,
     description: 'Strawberry kiwi flavored liquid mineral supplement. 32 fl oz.',
-    image: 'images/products/strawberry-kiwi-mins.jpg'
+    image: 'images/products/strawberry-kiwi-mins_liquid-sleeve_0523_image_1200x900.jpg'
   },
   {
     id: 'USYG0024',
@@ -80,7 +80,7 @@ const PRODUCTS = [
     category: 'minerals',
     price: 100.95,
     description: 'Four 32 fl oz bottles of strawberry kiwi flavored liquid minerals. Great value bundle.',
-    image: 'images/products/strawberry-kiwi-mins-4pack.jpg',
+    image: 'images/products/4pack_strawberry-kiwi-mins_liquid-sleeve_0523_image_1200x900_1.jpg',
     badge: 'Bundle'
   },
   {
@@ -89,7 +89,7 @@ const PRODUCTS = [
     category: 'energy',
     price: 41.95,
     description: 'Sports energy drink with vitamins, minerals, and electrolytes. 360g canister.',
-    image: 'images/products/rebound-canister.jpg'
+    image: 'images/products/0725_rebound-fx_canister_1200x900.jpg'
   },
   {
     id: '13231',
@@ -97,7 +97,7 @@ const PRODUCTS = [
     category: 'energy',
     price: 55.95,
     description: 'Convenient 30-count box of Rebound FX sports energy drink packets.',
-    image: 'images/products/rebound-packets.jpg'
+    image: 'images/products/13231_rebound_fx_gusset_30ct_0825_1200x900_1.jpg'
   },
   {
     id: 'USLL005030',
@@ -105,7 +105,7 @@ const PRODUCTS = [
     category: 'immune',
     price: 51.95,
     description: 'Hyperimmune egg powder for immune system support. 31 Day Supply Canister.',
-    image: 'images/products/i26.jpg'
+    image: 'images/products/usll005030_i26_hyperimmune-egg-0625_1200x900.jpg'
   },
   {
     id: '21211',
@@ -113,7 +113,7 @@ const PRODUCTS = [
     category: 'digestion',
     price: 30.95,
     description: 'Full spectrum digestive enzyme blend to support nutrient absorption. 120 capsules.',
-    image: 'images/products/ultimate-enzymes.jpg'
+    image: 'images/products/ultimate-enzymes_1120_1200x900.jpg'
   },
   {
     id: '21832',
@@ -121,7 +121,7 @@ const PRODUCTS = [
     category: 'essential-fats',
     price: 48.95,
     description: 'Essential fatty acids from borage, flax, and fish oils. 180 soft gels.',
-    image: 'images/products/ultimate-efa.jpg'
+    image: 'images/products/ultimate-efa-plus-90_1020_1200x900_1.jpg'
   },
   {
     id: 'USAD500007',
@@ -137,7 +137,7 @@ const PRODUCTS = [
     category: 'btt',
     price: 69.95,
     description: 'The most advanced multi-vitamin mineral complex. Contains 115 vegetables and fruits.',
-    image: 'images/products/btt-2.5.jpg'
+    image: 'images/products/btt-2.5.png'
   },
   {
     id: 'USYG100077',
@@ -145,7 +145,7 @@ const PRODUCTS = [
     category: 'btt',
     price: 54.95,
     description: 'Beyond Tangy Tangerine in convenient tablet form. 120 Tablets.',
-    image: 'images/products/btt-tablets.jpg'
+    image: 'images/products/btt-tablets.png'
   },
   {
     id: '20691',
@@ -153,7 +153,7 @@ const PRODUCTS = [
     category: 'minerals',
     price: 46.95,
     description: 'Complete mineral supplement in convenient capsule form. 64 capsules.',
-    image: 'images/products/mineral-caps.jpg'
+    image: 'images/products/ultimate-mineral-caps_0922_1200x900.jpg'
   },
   {
     id: 'USFL000123',
@@ -161,7 +161,7 @@ const PRODUCTS = [
     category: 'joints',
     price: 43.95,
     description: 'Methylsulfonylmethane for joint health, flexibility, and connective tissue support.',
-    image: 'images/products/msm.jpg'
+    image: 'images/products/msm-ultra_caplets_label-0420-cartimage_1200x900.jpg'
   },
   {
     id: '21252',
@@ -169,7 +169,7 @@ const PRODUCTS = [
     category: 'blood-sugar',
     price: 43.95,
     description: 'Blood sugar support formula with chromium, vanadium, and gymnema sylvestre. 240 capsules.',
-    image: 'images/products/gluco-gel.jpg'
+    image: 'images/products/ultimate_gluco-gel-240_1119_1200x900_1.jpg'
   },
   {
     id: '20971',
@@ -177,7 +177,7 @@ const PRODUCTS = [
     category: 'minerals',
     price: 30.95,
     description: 'Essential trace mineral for thyroid health, immune function, and antioxidant protection. 90 capsules.',
-    image: 'images/products/selenium.jpg'
+    image: 'images/products/ultimate-selenium_0324_1200x900_1.jpg'
   }
 ];
 
@@ -202,28 +202,28 @@ const NINETY_FOR_LIFE_PAKS = [
     name: 'Basic Mighty 90',
     price: 70.95,
     description: 'The foundational supplement system with essential minerals, vitamins, and nutrients.',
-    image: 'images/products/basic-mighty-90.jpg'
+    image: 'images/products/basic-mighty-90.png'
   },
   {
     id: '10245',
     name: 'Healthy Body Start Pak™ - Original',
     price: 142.95,
     description: 'The complete 90 For Life foundation with BTT, EFA Plus, and Beyond Osteo-fx.',
-    image: 'images/products/healthy-body-pak-original.jpg'
+    image: 'images/products/healthy-body-pak-original.png'
   },
   {
     id: '10282',
     name: 'Healthy Body Start Pak™ 2.0',
     price: 146.95,
     description: 'Enhanced formula with Beyond Osteo-Fx Liquid for superior absorption.',
-    image: 'images/products/healthy-body-pak-2.0.jpg'
+    image: 'images/products/healthy-body-pak-2.0.png'
   },
   {
     id: '10282Q',
     name: 'Healthy Body Start Pak™ 2.5',
     price: 146.95,
     description: 'Latest formula featuring Beyond Tangy Tangerine 2.5 and Beyond Osteo-Fx Liquid.',
-    image: 'images/products/healthy-body-pak-2.5.jpg'
+    image: 'images/products/healthy-body-pak-2.5.png'
   }
 ];
 
