@@ -9,12 +9,21 @@ const SPONSOR_ID = '102742703';
 const PRODUCTS = [
   {
     id: 'USYG30',
-    name: '3.0 Rise and Restore',
+    name: 'Restore Re 3.0 (Rise & Restore)',
     category: 'energy',
     price: 99.95,
-    description: 'Support your body\'s natural energy production and recovery with this powerful dual-formula system.',
+    description: 'Support your body\'s natural cellular energy production, deep recovery, and repair with this powerful dual-formula system.',
     image: 'images/products/usyg30_3.0-rise-restore_1200x900.jpg',
     badge: 'Popular'
+  },
+  {
+    id: 'USYG103210',
+    name: 'Liquid Osteo FX (Beyond Osteo-fx™ 32 fl oz)',
+    category: 'bone-health',
+    price: 52.95,
+    description: 'Targeted bone and joint support with calcium, magnesium, and co-factors in a high-absorption liquid plant formula.',
+    image: 'images/products/usyg103211_beyond_osteo_powder_357g_canister_1024_1200x900.jpg',
+    badge: 'Essential'
   },
   {
     id: 'USYG300005',
