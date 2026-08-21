@@ -38,23 +38,37 @@
   font-size: 0.92rem;
   margin-bottom: 14px;
   display: inline-block;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-.micro-hero-title {
+.micro-hero-title,
+.micro-hero h1 {
   font-family: 'Fraunces', Georgia, serif;
-  font-size: 3.4rem;
-  font-weight: 700;
-  color: #ffffff;
+  font-size: clamp(2.4rem, 5vw, 3.6rem) !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  -webkit-text-fill-color: #ffffff !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4) !important;
   margin-bottom: 20px;
   line-height: 1.15;
   letter-spacing: -0.01em;
-  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.45);
 }
 
-.micro-hero-title .title-accent {
-  color: var(--gold);
-  text-shadow: 0 3px 16px rgba(224, 138, 60, 0.45);
+.micro-hero-title .title-accent,
+.micro-hero h1 .title-accent {
+  color: var(--gold) !important;
+  -webkit-text-fill-color: var(--gold) !important;
+  text-shadow: 0 2px 12px rgba(224, 138, 60, 0.4) !important;
+}
+
+.micro-hero-card h3 {
+  color: #ffffff !important;
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  -webkit-text-fill-color: #ffffff !important;
 }
 
 .micro-hero-lead {
