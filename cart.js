@@ -7,7 +7,7 @@
   'use strict';
 
   // Configuration
-  const SPONSOR_ID = '102742703'; // Placeholder until Yvonne's is received
+  const SPONSOR_ID = '102876117';
   const CART_STORAGE_KEY = 'yvonne4u_cart_v1';
   
   // Cart state

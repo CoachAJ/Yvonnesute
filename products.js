@@ -1,10 +1,10 @@
 // ============================================================
 // 4ABETTERU2 WELLNESS — Product Catalog
 // Youngevity Products with Ygy1 checkout integration
-// Sponsor ID: 102742703 (placeholder until Yvonne's is received)
+// Sponsor ID / UID: 102876117
 // ============================================================
 
-const SPONSOR_ID = '102742703';
+const SPONSOR_ID = '102876117';
 
 const PRODUCTS = [
   {
