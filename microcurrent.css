@@ -33,25 +33,36 @@
 .micro-hero .eyebrow {
   color: var(--gold);
   font-weight: 800;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  font-size: 0.88rem;
-  margin-bottom: 12px;
+  font-size: 0.92rem;
+  margin-bottom: 14px;
   display: inline-block;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .micro-hero-title {
-  font-size: 3.2rem;
-  color: var(--white);
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: #ffffff;
   margin-bottom: 20px;
-  line-height: 1.12;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.45);
+}
+
+.micro-hero-title .title-accent {
+  color: var(--gold);
+  text-shadow: 0 3px 16px rgba(224, 138, 60, 0.45);
 }
 
 .micro-hero-lead {
   font-size: 1.15rem;
   line-height: 1.75;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.95);
   margin-bottom: 28px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .micro-affiliate-banner {
