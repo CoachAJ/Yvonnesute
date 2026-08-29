@@ -157,7 +157,7 @@
   <!-- ============== HERO — REBUILD WITH REA ============== -->
   <section class="rebuild-hero" id="home">
     <div class="hero-video-bg" aria-hidden="true">
-      <video autoplay muted loop playsinline preload="auto">
+      <video muted playsinline preload="auto" id="heroVideo">
         <source src="images/Less_medical_looking_intern.mp4" type="video/mp4">
       </video>
       <div class="hero-video-overlay"></div>
@@ -456,24 +456,60 @@
   <script src="cart.js"></script>
   <script src="script.js"></script>
   <script>
-    // Parallax scroll for hero video background
+    // Scroll-driven video playback for hero background
     (function() {
-      var videoBg = document.querySelector('.hero-video-bg');
-      if (!videoBg) return;
+      var video = document.getElementById('heroVideo');
+      var hero = document.querySelector('.rebuild-hero');
+      if (!video || !hero) return;
+
       var ticking = false;
-      function updateParallax() {
-        var scrolled = window.pageYOffset;
-        if (scrolled < window.innerHeight) {
-          videoBg.style.transform = 'translateY(' + (scrolled * 0.4) + 'px)';
+
+      // Wait for video metadata to load so we know duration
+      function initVideo() {
+        if (video.readyState >= 1) {
+          video.pause();
+          updateScrollVideo();
+        } else {
+          video.addEventListener('loadedmetadata', function() {
+            video.pause();
+            updateScrollVideo();
+          });
+        }
+      }
+
+      function updateScrollVideo() {
+        var heroRect = hero.getBoundingClientRect();
+        var heroHeight = hero.offsetHeight;
+        var viewportHeight = window.innerHeight;
+
+        // Calculate scroll progress through the hero (0 to 1)
+        // Starts when hero top enters viewport from bottom, ends when hero top exits top
+        var scrollProgress = Math.max(0, Math.min(1,
+          (viewportHeight - heroRect.top) / (viewportHeight + heroHeight)
+        ));
+
+        // Map scroll progress to video duration
+        if (video.duration) {
+          video.currentTime = scrollProgress * video.duration;
         }
         ticking = false;
       }
+
       window.addEventListener('scroll', function() {
         if (!ticking) {
-          window.requestAnimationFrame(updateParallax);
+          window.requestAnimationFrame(updateScrollVideo);
           ticking = true;
         }
       }, { passive: true });
+
+      window.addEventListener('resize', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(updateScrollVideo);
+          ticking = true;
+        }
+      }, { passive: true });
+
+      initVideo();
     })();
   </script>
 </body>
