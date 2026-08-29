@@ -156,6 +156,12 @@
 
   <!-- ============== HERO — REBUILD WITH REA ============== -->
   <section class="rebuild-hero" id="home">
+    <div class="hero-video-bg" aria-hidden="true">
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="images/Less_medical_looking_intern.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay"></div>
+    </div>
     <div class="container">
       <div class="rebuild-hero-content">
         <span class="eyebrow">REBUILD WITH REA</span>
@@ -449,5 +455,26 @@
   <script src="products.js"></script>
   <script src="cart.js"></script>
   <script src="script.js"></script>
+  <script>
+    // Parallax scroll for hero video background
+    (function() {
+      var videoBg = document.querySelector('.hero-video-bg');
+      if (!videoBg) return;
+      var ticking = false;
+      function updateParallax() {
+        var scrolled = window.pageYOffset;
+        if (scrolled < window.innerHeight) {
+          videoBg.style.transform = 'translateY(' + (scrolled * 0.4) + 'px)';
+        }
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(updateParallax);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+  </script>
 </body>
 </html>
